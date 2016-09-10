@@ -9,3 +9,5 @@
 My-Activities.iml
 app/app.iml 
 /.idea/
+/.idea/*
+/app/app.iml
