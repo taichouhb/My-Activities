@@ -5,7 +5,7 @@
 .DS_Store
 /build
 /captures
-.idea/modules.xml
-MyActivities.iml
+/.idea/modules.xml
+My-Activities.iml
 app/app.iml 
 
