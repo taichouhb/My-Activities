@@ -167,7 +167,10 @@ public class AccelerometerService extends SensorService implements SensorEventLi
     @Override
     protected void unregisterSensors() {
         //TODO : Unregister your sensors. Make sure mSensorManager is not null before calling its unregisterListener method.
-        mSensorManager.unregisterListener(this);
+
+        if(mSensorManager != null) {
+            mSensorManager.unregisterListener(this);
+        }
     }
 
     @Override
