@@ -11,6 +11,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -126,7 +127,11 @@ public class AccelerometerService extends SensorService implements SensorEventLi
                 try {
                     JSONObject data = json.getJSONObject("data");
                     long timestamp = data.getLong("timestamp");
-                    Log.d(TAG, "Step occurred at " + timestamp + ".");
+                    //Log.d(TAG, "Step occurred at " + timestamp + ".");
+                    Log.d(TAG, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA: " + data);
+                    //JSONArray arr = data.getJSONArray();
+                    //float[] dataCoords = {data.getFloat("z"), data.getFloat("y"), data.getFloat("z")};
+                    //broadcastAccelerometerReading(timestamp, dataCoords);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
